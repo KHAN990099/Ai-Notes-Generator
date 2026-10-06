@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Notes Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+
+    <header>
+      <h1>AI Notes Generator</h1>
+      <p>Apna lamba text paste karo, AI se saaf notes pao.</p>
+    </header>
+
+    <section class="card">
+      <label for="inputText">Apna text yahan paste karo</label>
+      <textarea id="inputText" placeholder="Jaise: lecture ka text, article, ya koi bhi padhai ka content..."></textarea>
+
+      <div class="row">
+        <div class="field">
+          <label for="style">Notes ka style</label>
+          <select id="style">
+            <option value="bullets">Bullet points</option>
+            <option value="summary">Short summary</option>
+            <option value="detailed">Detailed notes</option>
+            <option value="qa">Question - Answer</option>
+          </select>
+        </div>
+        <button id="generateBtn">Generate Notes</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="output-head">
+        <h2>📝 Tumhare Notes</h2>
+        <button id="copyBtn" class="ghost">Copy</button>
+      </div>
+      <div id="output">Notes yahan dikhenge...</div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
